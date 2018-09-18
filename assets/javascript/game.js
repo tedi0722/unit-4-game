@@ -51,29 +51,29 @@ $("#red").on("click", function () {
     totalScore += red;
     $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
     winLose();
-    $("#wins").html("<h3>" + "Wins: " + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses: " + "</h3>" + "<h3>" + losses + "</h3>");
+    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
+    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
 });
 $("#blue").on("click", function () {
     totalScore += blue;
     $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
     winLose();
-    $("#wins").html("<h3>" + "Wins: " + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses: " + "</h3>" + "<h3>" + losses + "</h3>");
+    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
+    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
 });
 $("#yellow").on("click", function () {
     totalScore += yellow;
     $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
     winLose();
-    $("#wins").html("<h3>" + "Wins: " + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses: " + "</h3>" + "<h3>" + losses + "</h3>");
+    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
+    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
 });
 $("#green").on("click", function () {
     totalScore += green;
     $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
     winLose();
-    $("#wins").html("<h3>" + "Wins: " + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses: " + "</h3>" + "<h3>" + losses + "</h3>");
+    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
+    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
 });
 }
 
