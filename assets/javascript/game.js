@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-// variables & grabbing by ID
+// global variables & grabbing by ID
 var randomNumber = $("#random-number");
 var totalScore = $("#total-score");
 var wins = $("#wins");
@@ -45,35 +45,39 @@ function winLose () {
     }
 }
 
+// add to score function
+function addScore (value) {
+    totalScore += value
+}
+
+// display total score, wins, and losses
+function display () {
+    $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
+    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
+    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
+}
+
 // click function and adding numbers to total score and check if win/lose
 function click () {
 $("#red").on("click", function () {
-    totalScore += red;
-    $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
+    addScore(red);
     winLose();
-    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
+    display();
 });
 $("#blue").on("click", function () {
-    totalScore += blue;
-    $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
+    addScore(blue);
     winLose();
-    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
+    display();
 });
 $("#yellow").on("click", function () {
-    totalScore += yellow;
-    $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
+    addScore(yellow);
     winLose();
-    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
+    display();
 });
 $("#green").on("click", function () {
-    totalScore += green;
-    $("#total-score").html("<h3>" + "Total Score:&nbsp" + "</h3>" + "<h2>" + totalScore + "</h2>");
+    addScore(green);
     winLose();
-    $("#wins").html("<h3>" + "Wins:&nbsp" + "</h3>" + "<h3>" + wins + "</h3>");
-    $("#losses").html("<h3>" + "Losses:&nbsp" + "</h3>" + "<h3>" + losses + "</h3>");
+    display();
 });
 }
 
