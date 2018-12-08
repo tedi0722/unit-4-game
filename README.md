@@ -1,1 +1,7 @@
-# unit-4-game
+# Crystal Collector Game
+
+### Technologies
+* HTML
+* CSS
+* JavaScript
+* jQuery
